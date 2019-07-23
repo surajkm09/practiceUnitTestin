@@ -1,0 +1,12 @@
+@mixin  zebra() {
+    @for $i from 1 to 7 {
+        @if ( $i %2 == 1) {
+            
+                background-color: black ;
+                color:white ;
+            
+        }
+        
+    }
+}
+*{ @include zebra();}
